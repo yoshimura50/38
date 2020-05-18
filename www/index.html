@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/cssua.min.js"></script>
+  <script>
+    function calculate() {
+        var myname = $("#myname").val();
+        var myage = $("#myage").val();
+        var birthyear = new Date().getFullYear() - myage;
+        if(myname==3 && myage>=21 || myname==4 && myage<=19){
+          var text = "おひつじ座"
+        }
+        else if(myname==4 && myage>=20 || myname==5 && myage<=20){
+          var text = "おうし座"
+        }
+        else if(myname==5 && myage>=21 || myname==6 && myage<=21){
+          var text = "ふたご座"
+        }
+        else if(myname==6 && myage>=22 || myname==7 && myage<=22){
+          var text = "かに座"
+        }
+        else if(myname==7 && myage>=23 || myname==8 && myage<=22){
+          var text = "しし座"
+        }
+        else if(myname==8 && myage>=23 || myname==9 && myage<=22){
+          var text = "おとめ座"
+        }
+        else if(myname==9 && myage>=23 || myname==10 && myage<=23){
+          var text = "てんびん座"
+        }
+        else if(myname==10 && myage>=24 || myname==11 && myage<=22){
+          var text = "さそり座"
+        }
+        else if(myname==11 && myage>=23 || myname==12 && myage<=21){
+          var text ="いて座"
+        }
+        else if(myname==12 && myage>=22 || myname==1 && myage<=19){
+          var text = "やぎ座"
+        }
+        else if(myname==1 && myage>=20 || myname==2 && myage<=18){
+          var text = "みずがめ座"
+        }
+        else if(myname==2 && myage>=19 || myname==3 && myage<=20){
+          var text = "うお座"
+        }
+        alert(text);
+    }
+  </script>
+</head>
+<body>
+  <div data-role="page" id="TopPage"> 
+    <header data-role="header" data-position="fixed" data-theme="c">
+      <h1>星座判定</h1>
+    </header>
+      <section data-role="content">
+
+        月
+        <input type="text" id="myname" class="input-text">
+        
+        日
+        <input type="text" id="myage" class="input-text">
+
+        <a class="button" onclick="calculate();">判定!</a>
+    </section>
+  </div> 
+</body>
+</html>
