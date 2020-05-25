@@ -1,74 +1,88 @@
 * {
-  font-family: ArialMT, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3";
-  -webkit-text-size-adjust: none;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #e4e4e4), color-stop(0.2, #e4e4e4), color-stop(0.2, #dddddd));
-  background-size: 7px 10px;
-  color: #000;
-}
-
-header {
-  border-top: solid 1px #bec5cf;
-  border-bottom: solid 1px #3f4e63;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #acb9c9), color-stop(0.5, #8395af), color-stop(0.5, #7388a5), color-stop(1, #7488a1));
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  text-shadow: -1px -1px 0 #434b57;
-  text-align: center;
+ font-family: ArialMT, "HG行書体", "Lucida Console";
+ -webkit-text-size-adjust: none;
+ margin: 0;
+ padding: 0;
 }
  
+html {
+ width: 100%;
+ height: 100%;
+}
+ 
+body{
+ width: 100%;
+ height:100%;
+ position:relative;
+ overflow:hidden;
+}
+ 
+header {
+ border-top: solid 1px rgb(109, 226, 241);
+ border-bottom: solid 1px rgb(7, 28, 53);
+ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #c0c), color-stop(0.5, #008), color-stop(0.5, #fff), color-stop(1, #f00));
+ color: #fff;
+ font-size: 16px;
+ font-weight: bold;
+ text-shadow: -1px -1px 0 #043;
+ text-align: center;
+}
 
 #contents {
-  padding: 10px;
+ padding: 20px;
+ background: #222; 
+ color: #f00;
 }
-
-
+ /*文字色*/
+.ui-content {
+ color: #161614;
+ text-shadow: -1px -1px 0 #23a8a8;
+}
+ 
 /* https://github.com/edom18/iPhone-button-CSS-template より */
 .button { 
-  position: relative; 
-  margin-bottom: 12px; 
-  margin-top: 12px; 
-  padding: 5px 10px; 
-  display: block; 
-  color: #000; 
-  text-decoration: none; 
-  text-align: center; 
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3); 
-  z-index: 5; 
+ position: relative; 
+ margin-bottom: 12px; 
+ margin-top: 12px; 
+ padding: 5px 10px; 
+ display: block; 
+ color: #000; 
+ text-decoration: none; 
+ text-align: center; 
+ text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3); 
+ z-index: 5; 
 } 
-
-   
+ 
+ 
 .button:after { 
-  content: ""; 
-  position: absolute; 
-  left: -3px;
-  top: -3px; 
-  width: 100%; 
-  height: 100%; 
-  padding: 2px; 
-  border-radius: 10px; 
-  background-color: #bebebe; 
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.7)), color-stop(0.5, rgba(255, 255, 255, 0.3)), color-stop(0.5, rgba(255, 255, 255, 0))); 
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset, 0 1px 0 rgba(0, 0, 0, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.3); 
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset, 0 1px 0 rgba(0, 0, 0, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.3); 
-  z-index: -1; 
+ content: ""; 
+ position: absolute; 
+ left: -3px;
+ top: -3px; 
+ width: 100%; 
+ height: 100%; 
+padding: 2px; 
+ background-color: #bebebe; 
+ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.7)), color-stop(0.5, rgba(255, 255, 255, 0.3)), color-stop(0.5, rgba(255, 255, 255, 0))); 
+ -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset, 0 1px 0 rgba(0, 0, 0, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.3); 
+ box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset, 0 1px 0 rgba(0, 0, 0, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.3); 
+ z-index: -1; 
 }
-
+ 
 /* set padding for iOS7 status bar */
 .ua-ios-7 .ui-page, .ua-ios-8, .ui-page {
-    padding-top: 63px !important;
+ padding-top: 63px !important;
+}
+ /*ボタンの色*/
+.ui-body-c .ui-link {
+ color: #0b0c0cf8;
+}
+ 
+.ua-ios-7 .ui-header, .ua-ios-8 .ui-header {
+ top: 30px;
 }
 
-.ua-ios-7 .ui-header, .ua-ios-8 .ui-header {
-    top: 20px;
+ /*グラデーション*/
+.ui-body-c {
+ background-image: linear-gradient(rgba(44, 53, 192, 0.781),rgba(10, 184, 253, 0.527), white);
 }
